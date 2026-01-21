@@ -1,0 +1,55 @@
+body{
+    background-color: rgb(4, 78, 102);
+}
+h1{
+    color: white;
+    text-align: center;
+    padding: 50px;
+    border-bottom: 2px solid black;
+}
+#view_id_1{
+    border-radius: 10px;
+    background-color: beige;
+    padding: 30px;
+    width: 400px;
+    margin: auto;
+    border: 1px solid black;
+}
+.view_button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.edit{
+    width: 60px;
+    height: 25px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.delete{
+    width: 60px;
+    height: 25px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.go_back{
+    width: 80px;
+    height: 25px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.edit:hover{
+    background-color: lightgreen;
+    transform: scale(1.2);
+    transition: 0.3s ease-out;
+}
+.delete:hover{
+    background-color: lightcoral;
+    transform: scale(1.2);
+    transition: 0.3s ease-out;
+}
+.go_back:hover{
+    background-color: lightblue;
+    transform: scale(1.2);
+    transition: 0.3s ease-out;
+}

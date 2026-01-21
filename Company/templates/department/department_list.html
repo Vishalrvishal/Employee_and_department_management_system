@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/department_list.css' %}">
+</head>
+<body>
+    <h1>WELCOME</h1>
+    <hr>
+    <h2>Department List</h2>
+    <a href="/department/add/"><button class="add_button">Add Department</button></a>
+    {% for department in departments %}
+    <div class="dept_view">
+        <div class="dept_details">
+            <p>Department Name: <span class="dept_style">{{ department.department_name }}</span></p>
+            <p>Department No. of Projects: <span class="dept_style">{{ department.department_projects }}</span></p>
+            <div class="view_button">
+                <a href="/department/edit/{{ department.id }}"><button class="edit_button">Edit</button></a>
+                <a href="/department/delete/{{ department.id }}"><button class="delete_button">Delete</button></a>
+                <a href="/department/details/{{ department.id }}"><button class="edit_button">View</button></a>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+</body>
+</html>
+
+

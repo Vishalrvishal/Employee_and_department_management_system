@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/department_detail.css' %}">
+</head>
+<body>
+    <div class="details">
+        <h1>Department Details</h1>
+        <div class="full_details">
+            <p>Department Name: <span class="dept_style">{{ department.department_name }}</span></p><br>
+            <p>Department Head: <span class="dept_style">{{ department.department_head }}</span></p><br>
+            <p>Department Projects: <span class="dept_style">{{ department.department_projects }}</span></p><br>
+            <p>Department Region: <span class="dept_style">{{ department.department_region }}</span></p><br>
+            <a href="/department/list"><button class="click_button">Click to view all departments</button></a><br>
+        </div>
+    </div>
+</body>
+</html>

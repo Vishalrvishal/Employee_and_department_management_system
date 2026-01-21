@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/employee_view_id.css' %}">
+</head>
+<body>
+    <h1> Employee Details</h1>
+    <div id="view_id_1">
+        <p>Employee Name: {{employee.employee_name}}</p>
+        <p>Employee Age: {{employee.employee_age}}</p>
+        <p>Employee Address: {{employee.employee_address}}</p>
+        <p>Employee Department: {{employee.employee_department}}</p>
+        <p>Employee Reporting Manager: {{employee.employee_reporting_manager}}</p>
+        <p>Employee Email: {{employee.employee_email}}</p>
+        <div class="view_button">
+            <a href="/employee/edit/{{employee.id}}"><button class="edit">Edit</button></a>
+            <a href="/employee/delete/{{employee.id}}"><button class="delete">Delete</button></a>
+            <button class="go_back">GO Back</button>
+        </div><br>
+        <a href="/employee/view"><button>click here to view all Employees</button></a>
+    </div>
+</body>
+</html>

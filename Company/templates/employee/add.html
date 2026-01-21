@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/employee_add.css' %}">
+</head>
+<body>
+    <div id="add1">
+        <h1>Welcome Employee</h1>
+    </div>
+    <div id="add2">
+        <h2>Register Employee</h2>
+    </div>
+    <div id="add3">
+        <form action="/employee/add/" method="post">
+            {% csrf_token %}
+            <label> Employee Name</label>
+            <input type="text" name="emp_name" placeholder="Enter Employee Name"><br><br>
+            <label> Employee Age</label>
+            <input type="number" name="emp_age" placeholder="Enter Employee Age"><br><br>
+            <label> Employee Address</label>
+            <input type="text" name="emp_address" placeholder="Enter Employee Address"><br><br>
+            <label> Employee Department</label>
+            <input type="text" name="emp_department" placeholder="Enter Employee Department"><br><br>
+            <label> Employee Reporting Manager</label>
+            <input type="text" name="emp_reporting_manager" placeholder="Enter Employee Reporting Manager"><br><br>
+            <label> Employee Email</label>
+            <input type="email" name="emp_email" placeholder="Enter Employee Email"><br><br>
+            <button id="submit_button" type="submit">Submit</button>
+            <button id="register_button" type="reset">Reset</button>
+        </form>
+        <a href="/employee/view/"><button class="emp_det">Click here to view all employee details</button></a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message</title>
+    <link rel="stylesheet" href="{% static 'css/message.css' %}">
+</head>
+<body>
+    <div class="message">
+        <h1>{{ msg }}</h1>
+        <a href="/department/list"><button class="home_button">Click to view all departments</button></a>
+    </div>
+</body>
+</html>

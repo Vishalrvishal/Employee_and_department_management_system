@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(4, 78, 102);
+}
+h1{
+    text-align: center;
+    color: white;
+    margin-bottom: 3em;
+    margin-top: 1em;
+}
+form{
+    border: 1px solid black;
+    width: 40%;
+    margin-left: 400px;
+    padding: 20px;
+    gap: 30px;
+    background-color: beige;
+    border-radius: 10px;
+}
+label{
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-left: 70px;
+    text-align: left;
+    display: inline-block;
+    width: 200px;
+}
+#submit_button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 150px;
+}
+#cancel_button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 40px;
+}

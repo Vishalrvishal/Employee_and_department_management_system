@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(4, 78, 102);
+}
+body h1{
+    text-align: center;
+    margin: 30px 0;
+    color: white;
+}
+.full_details{
+    font-weight: 900;
+    background-color: beige;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    padding: 30px;
+    max-width: 300px;
+    margin: 10em auto;
+}
+.dept_style{
+    font-weight: 900;
+    color: brown;
+}
+.click_button{
+    height: 30px;
+    width: auto;
+    padding: 0 5px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}

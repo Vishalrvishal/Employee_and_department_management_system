@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.home{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(4, 78, 102);
+}
+header{
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    background-color: rgb(155, 146, 190);
+}
+header h1{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 50px;
+    color: rgb(116, 101, 101);
+}
+.emp_dept{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 20em;
+    margin-top: 10em;
+    column-gap: 2em;
+}
+.emp_dept a{
+    background-color: beige;
+    padding: 80px;
+    margin-top: 30px;
+    font-size: 50px;
+    font-weight: 900;
+    border-radius: 20px;
+    text-decoration: none;
+    color: rgb(116, 101, 101);
+}
+.home_nav:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease-out;
+}

@@ -1,0 +1,49 @@
+body{
+    background-color: rgb(4, 78, 102);
+}
+.view_button{
+    cursor: pointer;
+    color: white;
+    margin-left: 2em;
+    background-color: black;
+    height: 40px;
+    border-radius: 10px;
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid black;
+    color: white;
+}
+h2{
+    text-align: center;
+    color:beige;
+}
+#view1{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    gap: 80px;
+    padding: 50px;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+}
+#emp1{
+    background-color: beige;
+    color: rgb(104, 103, 103);
+    font-weight: 900;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#view1>:hover{
+    background-color: lightcoral;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-out;
+}
+.data{
+    font-weight: 900;
+    color:brown;
+}

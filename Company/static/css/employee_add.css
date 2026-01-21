@@ -1,0 +1,68 @@
+body{
+    background-color: rgb(4, 78, 102);
+}
+#add1{
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding: 20px;
+    font-size: 25px;
+}
+#add1 h1{
+    color: white;
+}
+#add2 {
+    text-align:center;
+    color: beige;
+}
+#add3{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    
+}
+
+form{
+    border: 1px solid black;
+    width: 40%;
+    margin-left: 400px;
+    padding: 20px;
+    gap: 30px;
+    background-color: beige;
+    border-radius: 10px;
+}
+label{
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: left;
+    display: inline-block;
+    width: 200px;
+}
+#submit_button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#register_button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+a .emp_det{
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-left: 28em;
+    background-color: black;
+    border-radius: 10px;
+    cursor: pointer;
+}

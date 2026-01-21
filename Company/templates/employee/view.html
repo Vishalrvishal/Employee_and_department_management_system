@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/employee_view.css' %}">
+</head>
+<body>
+    <h1>Welcome</h1>
+    <a href="/employee/add/"><button class="view_button">ADD EMPLOYEE</button></a>
+    <h2>All Employee Details</h2>
+    <div id="view1">
+        {% for employee in employees %}
+        <div id="emp1">
+            <p>Employee Name: <span class="data">{{employee.employee_name}}</span></p>
+            <p>Employee Age: <span class="data">{{employee.employee_age}}</span></p>
+            <p>Employee Address: <span class="data">{{employee.employee_address}}</span></p>
+            <a href="/employee/view/{{employee.id}}"><button>click here to view all the details</button></a>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

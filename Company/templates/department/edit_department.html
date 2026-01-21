@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/edit_department.css' %}">
+</head>
+<body>
+    <h1>Edit Department</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <p>Department Name: <input type="text" name="department_name" placeholder="Enter the Department Name" value="{{ department.department_name }}"></p><br>
+        <p>Department Head: <input type="text" name="department_head" placeholder="Enter the Department Head" value="{{ department.department_head }}"></p><br>
+        <p>Department Projects: <input type="number" name="department_projects" placeholder="Enter the Department Projects" value="{{ department.department_projects }}"></p><br>
+        <p>Department Region: <input type="text" name="department_region" placeholder="Enter the Department Region" value="{{ department.department_region }}"></p><br>
+        <div class="edit_button">
+            <button class="sub" type="submit">Save Changes</button>
+            <button class="reset" type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+</html>

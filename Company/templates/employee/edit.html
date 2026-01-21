@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/edit_employee.css' %}">
+</head>
+<body>
+    <h1>Edit the employee details</h1>
+ <form action='/employee/edit/{{employee.id}}/' method="post">
+    {% csrf_token %}
+        <label> Employee Name</label>
+        <input type="text" name="emp_name" placeholder="Enter Employee Name" value="{{employee.employee_name}}"><br><br>
+        <label> Employee Age</label>
+        <input type="number" name="emp_age" placeholder="Enter Employee Age" value="{{employee.employee_age}}"><br><br>
+        <label> Employee Address</label>
+        <input type="text" name="emp_address" placeholder="Enter Employee Address" value="{{employee.employee_address}}"><br><br>
+        <label> Employee Department</label>
+        <input type="text" name="emp_department" placeholder="Enter Employee Department" value="{{employee.employee_department}}"><br><br>
+        <label> Employee Reporting Manager</label>
+        <input type="text" name="emp_reporting_manager" placeholder="Enter Employee Reporting Manager" value="{{employee.employee_reporting_manager}}"><br><br>
+        <label> Employee Email</label>
+        <input type="email" name="emp_email" placeholder="Enter Employee Email" value="{{employee.employee_email}}"><br><br>
+        <button id="submit_button" type="submit">Submit</button>
+        <button id="cancel_button" type="reset">Reset</button>
+</form>
+</body>
+</html>

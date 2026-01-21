@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/add_department.css' %}">
+</head>
+<body>
+    <h1>Add Department</h1>
+    <hr>
+    <form action="/department/add/" method="post">
+        {% csrf_token %}
+        <label> Department Name</label>
+        <input type="text" name="dept_name" placeholder="Enter Department Name"><br><br>
+        <label> Department No. of Projects</label>
+        <input type="number" name="dept_projects" placeholder="Enter Department No. of Projects"><br><br>
+        <label> Department Head</label>
+        <input type="text" name="dept_head" placeholder="Enter Department Head"><br><br>
+        <label>Department Region</label>
+        <input type="text" name="dept_region" placeholder="Enter Department Region"><br><br>
+        <div class="add_button">
+            <button class="submit_button" type="submit">Submit</button>
+            <button class="cancel_button" type="reset">Reset</button>
+        </div>
+    </form>
+    <a href="/department/list"><button class="back_button">Back to Department List</button></a>
+</body>
+</html>
